@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Admin</title>
+    <link rel="stylesheet" type="text/css" href="../Css/style-a.css">
+    <link rel="website icon" type="png" href="../Icon/admin.png">
+  </head>
+  <body>
+    <div id="nagy">
+      <a href="../New-web/index.html">
+        <p>New web</p>
+        </a>
+    </div>
+    <p>----------</p>
+    <a href="../Games/index.html">
+      <p>Games</p>
+    </a>
+    <a href="../Tools/Calculator/index.html">
+      <p>Calculator</p>
+    </a>
+    <a href="../Tools/To-Do/index.html">
+      <p>To-do</p>
+    </a>
+    <a href="../Tools/Whiteboard/php.html">
+      <p>Whiteboard</p>
+    </a>
+    <a href="../Tools/Quiz/index.html">
+      <p>Quiz</p>
+    </a>
+    <a href="../Login.html">
+      <p>Login</p>
+    </a>
+    <p>----------</p>
+    <a href="test.html">
+      <p>Test</p>
+    </a>
+    <a href="tools.html">
+      <p>Tools</p>
+    </a>
+    <a href="users.html">
+      <p>Users</p>
+    </a>
+    <a href="download.html">
+      <p>Downloads</p>
+    </a>
+    <a href="../index.html">
+      <p>index</p>
+    </a>
+    <a href="../index-s2.html">
+      <p>index-s2</p>
+    </a>
+    <a href="stats.html">
+      <p>Stats</p>
+    </a>
+    <script src="inspect.js"></script>
+    <script>
+      if (localStorage.getItem('loggedInUser') !== 'admin') {
+        window.location.href = '../index.html';
+      }
+    </script>
+  </body>
+</html>

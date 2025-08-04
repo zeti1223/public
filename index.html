@@ -1,89 +1,141 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Welcome to Firebase Hosting</title>
-
-    <!-- update the version number as needed -->
-    <script defer src="/__/firebase/12.0.0/firebase-app-compat.js"></script>
-    <!-- include only the Firebase features as you need -->
-    <script defer src="/__/firebase/12.0.0/firebase-auth-compat.js"></script>
-    <script defer src="/__/firebase/12.0.0/firebase-database-compat.js"></script>
-    <script defer src="/__/firebase/12.0.0/firebase-firestore-compat.js"></script>
-    <script defer src="/__/firebase/12.0.0/firebase-functions-compat.js"></script>
-    <script defer src="/__/firebase/12.0.0/firebase-messaging-compat.js"></script>
-    <script defer src="/__/firebase/12.0.0/firebase-storage-compat.js"></script>
-    <script defer src="/__/firebase/12.0.0/firebase-analytics-compat.js"></script>
-    <script defer src="/__/firebase/12.0.0/firebase-remote-config-compat.js"></script>
-    <script defer src="/__/firebase/12.0.0/firebase-performance-compat.js"></script>
-    <!-- 
-      initialize the SDK after all desired features are loaded, set useEmulator to false
-      to avoid connecting the SDK to running emulators.
-    -->
-    <script defer src="/__/firebase/init.js?useEmulator=true"></script>
-
-    <style media="screen">
-      body { background: #ECEFF1; color: rgba(0,0,0,0.87); font-family: Roboto, Helvetica, Arial, sans-serif; margin: 0; padding: 0; }
-      #message { background: white; max-width: 360px; margin: 100px auto 16px; padding: 32px 24px; border-radius: 3px; }
-      #message h2 { color: #ffa100; font-weight: bold; font-size: 16px; margin: 0 0 8px; }
-      #message h1 { font-size: 22px; font-weight: 300; color: rgba(0,0,0,0.6); margin: 0 0 16px;}
-      #message p { line-height: 140%; margin: 16px 0 24px; font-size: 14px; }
-      #message a { display: block; text-align: center; background: #039be5; text-transform: uppercase; text-decoration: none; color: white; padding: 16px; border-radius: 4px; }
-      #message, #message a { box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); }
-      #load { color: rgba(0,0,0,0.4); text-align: center; font-size: 13px; }
-      @media (max-width: 600px) {
-        body, #message { margin-top: 0; background: white; box-shadow: none; }
-        body { border-top: 16px solid #ffa100; }
-      }
-    </style>
+    <title>Ztech</title>
+    <link rel="stylesheet" type="text/css" href="Css/style.css">
+    <link rel="website icon" type="png" href="Icon/main.png">
   </head>
   <body>
-    <div id="message">
-      <h2>Welcome</h2>
-      <h1>Firebase Hosting Setup Complete</h1>
-      <p>You're seeing this because you've successfully setup Firebase Hosting. Now it's time to go build something extraordinary!</p>
-      <a target="_blank" href="https://firebase.google.com/docs/hosting/">Open Hosting Documentation</a>
+    <div>
+      <a href="Games/index.html">
+        <p>Games</p>
+      </a>
+      <a href="Tools/Calculator/index.html">
+        <p>Calculator</p>
+      </a>
+      <a href="Tools/To-Do/index.html">
+        <p>To-do</p>
+      </a>
+      <a href="Tools/Whiteboard/php.html">
+        <p>Whiteboard</p>
+      </a>
+      <a href="Tools/Quiz/index.html">
+        <p>Quiz</p>
+      </a>
+      <a href="Login.html">
+        <p>Login</p>
+      </a>
     </div>
-    <p id="load">Firebase SDK Loading&hellip;</p>
+    <svg width="50vw" height="20vw" viewBox="0 0 181 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0.00250006 47V41.24L21.0585 5.528H0.3225V0.279999H26.8825V6.04L5.8265 41.752H27.5225V47H0.00250006ZM55.9775 47C52.9482 47 50.5802 46.1893 48.8735 44.568C47.2095 42.9467 46.3775 40.664 46.3775 37.72V17.048H36.4575V11.8H46.3775V1.88H52.1375V11.8H66.2175V17.048H52.1375V37.72C52.1375 40.408 53.4175 41.752 55.9775 41.752H65.5775V47H55.9775ZM90.5125 47.64C87.7392 47.64 85.3072 47.0853 83.2165 45.976C81.1685 44.8667 79.5685 43.3093 78.4165 41.304C77.3072 39.256 76.7525 36.888 76.7525 34.2V24.6C76.7525 21.8693 77.3072 19.5013 78.4165 17.496C79.5685 15.4907 81.1685 13.9333 83.2165 12.824C85.3072 11.7147 87.7392 11.16 90.5125 11.16C93.2858 11.16 95.6965 11.7147 97.7445 12.824C99.8352 13.9333 101.435 15.4907 102.545 17.496C103.697 19.5013 104.273 21.8693 104.273 24.6V30.808H82.3845V34.2C82.3845 36.9733 83.0885 39.1067 84.4965 40.6C85.9045 42.0507 87.9098 42.776 90.5125 42.776C92.7312 42.776 94.5232 42.392 95.8885 41.624C97.2538 40.8133 98.0858 39.6187 98.3845 38.04H104.145C103.761 40.984 102.31 43.3307 99.7925 45.08C97.3178 46.7867 94.2245 47.64 90.5125 47.64ZM98.6405 26.968V24.6C98.6405 21.8267 97.9365 19.6933 96.5285 18.2C95.1632 16.7067 93.1578 15.96 90.5125 15.96C87.9098 15.96 85.9045 16.7067 84.4965 18.2C83.0885 19.6933 82.3845 21.8267 82.3845 24.6V26.456H99.0885L98.6405 26.968ZM129.144 47.64C126.328 47.64 123.853 47.1067 121.72 46.04C119.629 44.9733 118.008 43.4373 116.856 41.432C115.704 39.384 115.128 36.9733 115.128 34.2V24.6C115.128 21.784 115.704 19.3733 116.856 17.368C118.008 15.3627 119.629 13.8267 121.72 12.76C123.853 11.6933 126.328 11.16 129.144 11.16C133.197 11.16 136.461 12.248 138.936 14.424C141.41 16.6 142.712 19.5653 142.84 23.32H137.08C136.952 21.0587 136.184 19.3307 134.776 18.136C133.41 16.8987 131.533 16.28 129.144 16.28C126.626 16.28 124.621 17.0053 123.128 18.456C121.634 19.864 120.888 21.8907 120.888 24.536V34.2C120.888 36.8453 121.634 38.8933 123.128 40.344C124.621 41.7947 126.626 42.52 129.144 42.52C131.533 42.52 133.41 41.9013 134.776 40.664C136.184 39.4267 136.952 37.6987 137.08 35.48H142.84C142.712 39.2347 141.41 42.2 138.936 44.376C136.461 46.552 133.197 47.64 129.144 47.64ZM153.951 47V0.279999H159.711V11.8V18.52H160.927L159.711 19.864C159.711 17.0907 160.543 14.9573 162.207 13.464C163.871 11.928 166.175 11.16 169.119 11.16C172.66 11.16 175.476 12.248 177.567 14.424C179.657 16.6 180.703 19.5653 180.703 23.32V47H174.943V23.96C174.943 21.4427 174.26 19.5013 172.895 18.136C171.572 16.728 169.759 16.024 167.455 16.024C165.065 16.024 163.167 16.7707 161.759 18.264C160.393 19.7573 159.711 21.8693 159.711 24.6V47H153.951Z" fill="white"/>
+      </svg>
+      <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Scroll to the bottom of the page on load
+            window.scrollTo(0, document.body.scrollHeight);
+    
+            // Scroll to the top of the page after 2 seconds
+            setTimeout(function() {
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            }, 1600); // Delay for 2 seconds
+        });
 
-    <script>
-      document.addEventListener('DOMContentLoaded', function() {
-        const loadEl = document.querySelector('#load');
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
-        // // The Firebase SDK is initialized and available here!
-        //
-        // firebase.auth().onAuthStateChanged(user => { });
-        // firebase.database().ref('/path/to/ref').on('value', snapshot => { });
-        // firebase.firestore().doc('/foo/bar').get().then(() => { });
-        // firebase.functions().httpsCallable('yourFunction')().then(() => { });
-        // firebase.messaging().requestPermission().then(() => { });
-        // firebase.storage().ref('/path/to/ref').getDownloadURL().then(() => { });
-        // firebase.analytics(); // call to activate
-        // firebase.analytics().logEvent('tutorial_completed');
-        // firebase.performance(); // call to activate
-        //
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
+        document.addEventListener('keydown', function (e) {
+          if (e.ctrlKey && e.key === 'Enter') {
+          window.location.href = 'New-web/index.html';
+          }
+        });
 
-        try {
-          let app = firebase.app();
-          let features = [
-            'auth', 
-            'database', 
-            'firestore',
-            'functions',
-            'messaging', 
-            'storage', 
-            'analytics', 
-            'remoteConfig',
-            'performance',
-          ].filter(feature => typeof app[feature] === 'function');
-          loadEl.textContent = `Firebase SDK loaded with ${features.join(', ')}`;
-        } catch (e) {
-          console.error(e);
-          loadEl.textContent = 'Error loading the Firebase SDK, check the console.';
-        }
-      });
+        document.addEventListener('keydown', function (e) {
+          if (e.shiftKey && e.key === 'Enter') {
+          window.location.href = 'index-s2.html';
+          } 
+        });
     </script>
+    <script src="inspect.js"></script>
   </body>
 </html>
+
+<!-- <!DOCTYPE html>
+ <html lang="hu">
+ <head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>???</title>
+   <style>
+     body {
+             font-family: 'Arial', sans-serif;
+             display: flex;
+             align-items: center;
+             justify-content: center;
+             height: 100vh;
+             margin: 0;
+             background-color: black;
+           }
+ 
+           .countdown-container {
+             text-align: center;
+             font-size: xx-large;
+             color:#ffffff;
+           }
+ 
+           #countdown {
+             font-size: 2em;
+             margin-top: 20px;
+           }
+ 
+           .loader {
+             border: 20px solid #0a0c0d;
+             border-top: 20px solid #dc2f02;
+             border-radius: 75%;
+             width: 100px;
+             height: 100px;
+             animation: spin 0.9s linear infinite;
+           }
+ 
+           @keyframes spin {
+             0% { transform: rotate(0deg); }
+             100% { transform: rotate(360deg); }
+           }
+   </style>
+ </head>
+ <body>
+   <div class="countdown-container">
+     <div id="countdown"></div>
+   </div>
+   <script>
+       document.addEventListener('DOMContentLoaded', function () {
+     // Set the date we're counting down to
+     var countDownDate = new Date("Mar 08, 2025 12:00:00").getTime();
+ 
+     // Update the countdown every 1 second
+     var countdown = setInterval(function () {
+       // Get the current date and time
+       var now = new Date().getTime();
+ 
+       // Calculate the remaining time
+       var distance = countDownDate - now;
+ 
+       // Calculate days, hours, minutes, and seconds
+       var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+       var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+       var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+       var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+ 
+       // Display the countdown
+       document.getElementById("countdown").innerHTML = days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
+ 
+       // If the countdown is over, display a message
+       if (distance < 0) {
+         clearInterval(countdown);
+         document.getElementById("countdown").innerHTML = "EXPIRED";
+       }
+     }, 1000);
+   });
+   
+   document.addEventListener("contextmenu",(e)=>{
+     e.preventDefault()
+   })
+   </script>
+ </body>
+ </html>
