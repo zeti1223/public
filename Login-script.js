@@ -1,26 +1,40 @@
-document.getElementById("login-form").addEventListener("submit", function(event) {
+import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
+import { getDatabase, ref, get } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-database.js";
+
+const firebaseConfig = {
+  apiKey: "AIzaSyA9pr29fe_2qOINUTnWdJxbLzcU4gRjttU",
+  authDomain: "zeti1223.firebaseapp.com",
+  databaseURL: "https://zeti1223-default-rtdb.europe-west1.firebasedatabase.app",
+  projectId: "zeti1223",
+  storageBucket: "zeti1223.firebasestorage.app",
+  messagingSenderId: "556059487179",
+  appId: "1:556059487179:web:eff9cd64fe2154de12244e",
+  measurementId: "G-WFE315SDXZ"
+};
+
+const app = initializeApp(firebaseConfig);
+const db = getDatabase(app);
+
+document.getElementById("login-form").addEventListener("submit", async function(event) {
     event.preventDefault();
 
     const username = document.getElementById("username").value;
     const password = document.getElementById("password").value;
     const errorMessage = document.getElementById("error-message");
 
-    if (username === "admin" && password === "D3c23admin") {
-        localStorage.setItem("loggedInUser", "admin");
-        window.location.href = "Admin/index.html";
-    } else if (username === "zalan" && password === "ZaxZax") {
-        localStorage.setItem("loggedInUser", "zalan");
-        window.location.href = "Users/zalan.html";
-    } else if (username === "zsoltbotyanszki" && password === "19810105") {
-        localStorage.setItem("loggedInUser", "zsoltbotyanszki");
-        window.location.href = "Users/Bozso.html";
-    } else if (username === "NimY" && password === "NimYvok111") {
-        localStorage.setItem("loggedInUser", "nimrod");
-        window.location.href = "Users/nimrod.html";
-    } else if (username === "New" && password === "New") {
-        localStorage.setItem("loggedInUser", "new");
-        window.location.href = "New-web/index.html";
-    } else {
+    try {
+        const snapshot = await get(ref(db, 'users/' + username));
+        if (snapshot.exists()) {
+            const userData = snapshot.val();
+            if (userData.password === password) {
+                localStorage.setItem("loggedInUser", username);
+                window.location.href = userData.redirect;
+                return;
+            }
+        }
         errorMessage.textContent = "Hibás felhasználónév vagy jelszó.";
+    } catch (error) {
+        errorMessage.textContent = "Hiba történt a bejelentkezés során.";
+        console.error(error);
     }
 });
